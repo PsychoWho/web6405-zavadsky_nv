@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBEL - Контакты</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <img src="images/logo.png" alt="Логотип UBEL" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Главная</a>
+            <a href="albums.html">Альбомы</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h2>Контакты</h2>
+    <p>Оставлю свои контакты:</p>
+    <ul>
+        <li>GitHub: <a href="https://github.com/PsychoWho/web6405-zavadsky_nv">ссылка на репозиторий</a></li>
+        <li>Группа: 6405-010302D</li>
+    </ul>
+
+    <h2>Социальные сети группы</h2>
+    <p>
+        <a href="https://vk.ru/doubleubel">ВКонтакте</a> |
+        <a href="https://www.youtube.com/@ubel4729">YouTube</a> |
+        <a href="https://ubelmusic.com/">Сайт</a>
+    </p>
+
+    <h2>Форма обратной связи</h2>
+    <form class="contact-form" id="contact-form"
+          action="https://httpbin.org/post" method="post" target="_blank">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label class="agreement">
+            <input type="checkbox" name="agreement" value="Да" required>
+            Согласен на обработку данных
+        </label>
+
+        <button type="submit">Отправить</button>
+    </form>
+</main>
+
+<footer>
+    <p>Сайтик по любимой группе для лр4</p>
+</footer>
+
+</body>
+</html>
